@@ -1,0 +1,75 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e6d6c6;
+}
+
+h1 {
+    font-size: 28px;
+    color: #816346;
+}
+
+.sudoku-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+}
+
+.cell {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #816346;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  background-color: #e6d6c6;
+  font-weight: 500;
+  color: #816346;
+}
+
+#submit-button {
+  padding: 9px 10px;
+  font-size: 20px;
+  background-color: #d5bca2;
+  color: #816346;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#submit-button:hover{
+  background-color: #ebcead;
+}
+#submit-button:active{
+  box-shadow: 0 5px #816346;
+  transform: translateY(4px);
+}
+
+
+/* .sudoku-container > .cell:nth-child(30n + 1),
+.sudoku-container > .cell:nth-child(30n + 2), 
+.sudoku-container > .cell:nth-child(30n + 3),
+.sudoku-container > .cell:nth-child(30n + 10),
+.sudoku-container > .cell:nth-child(30n + 11), 
+.sudoku-container > .cell:nth-child(30n + 12),
+.sudoku-container > .cell:nth-child(30n + 19),
+.sudoku-container > .cell:nth-child(30n + 20), 
+.sudoku-container > .cell:nth-child(30n + 21)  */
+
+.sudoku-container > .cell:nth-child(9n+1):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+2):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+3):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+7):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+8):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+9):not([data-row="3"]):not([data-row="4"]):not([data-row="5"]),
+.sudoku-container > .cell:nth-child(9n+4):not([data-row="0"]):not([data-row="1"]):not([data-row="2"]):not([data-row="6"]):not([data-row="7"]):not([data-row="8"]),
+.sudoku-container > .cell:nth-child(9n+5):not([data-row="0"]):not([data-row="1"]):not([data-row="2"]):not([data-row="6"]):not([data-row="7"]):not([data-row="8"]),
+.sudoku-container > .cell:nth-child(9n+6):not([data-row="0"]):not([data-row="1"]):not([data-row="2"]):not([data-row="6"]):not([data-row="7"]):not([data-row="8"]) {
+  background-color: #d5bca2;
+}
