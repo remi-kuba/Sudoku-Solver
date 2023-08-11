@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Sudoku Grid Input</h1>
+  <br>
+  <div class="sudoku-container" id="sudoku-container">
+  </div>
+  <br>
+  <button id="submit-button">Solve</button>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
