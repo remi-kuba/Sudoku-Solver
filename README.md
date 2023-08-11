@@ -3,8 +3,8 @@ Solves sudoku boards and includes 2 different methods of solving (recursive back
 
 ## Install and Running Solver
 - Clone the repository (run "git clone (repository url)") and change directories into Sudoku-Solver <br />
-- Run the fe.py file on your terminal (python fe.py) <br />
-- Once running, enter ```[localhost:8080](http://localhost:8080)``` into your search engine <br /> <br />
+- Run ```fe.py``` on your terminal (python fe.py) <br />
+- Once running, enter ```http://localhost:8000``` into your search engine <br /> <br />
 Your site should look like the image below: <br /><br />
 <img width="764" alt="Screenshot 2023-08-11 at 12 57 46 AM" src="https://github.com/remi-kuba/Sudoku-Solver/assets/129909448/07f197b7-1552-4d3d-b471-45978979b44c"> <br />
 
